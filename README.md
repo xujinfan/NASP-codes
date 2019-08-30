@@ -20,10 +20,10 @@ python test_tinyimagenet.py --auxiliary --model_path imagenet_model.pt # Tiny Im
 ## Reference
 ```
 @techreport{yao2019differentiable,
-  title = {Differentiable Neural Architecture Search via Proximal Iterations},
-  author = {Yao, Quanming and Xu, Ju and Tu, Wei-Wei and Zhu, Zhanxing},
+  title       = {Differentiable Neural Architecture Search via Proximal Iterations},
+  author      = {Yao, Quanming and Xu, Ju and Tu, Wei-Wei and Zhu, Zhanxing},
   institution = {arXiv preprint arXiv:1905.13577},
-  year = {2019}
+  year        = {2019}
 }
 
 @TechReport{quanming2018auto,
