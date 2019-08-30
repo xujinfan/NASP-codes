@@ -18,7 +18,7 @@ python test.py --auxiliary --model_path cifar10_model.pt # CIFAR-10
 python test_tinyimagenet.py --auxiliary --model_path imagenet_model.pt # Tiny Imagenet
 
 ## Reference
-
+```
 @techreport{yao2019differentiable,
   title = {Differentiable Neural Architecture Search via Proximal Iterations},
   author = {Yao, Quanming and Xu, Ju and Tu, Wei-Wei and Zhu, Zhanxing},
@@ -32,6 +32,7 @@ python test_tinyimagenet.py --auxiliary --model_path imagenet_model.pt # Tiny Im
   institution = {Arxiv: 1810.13306},
   year        = {2018},
 }
+```
 
 ## Acknowledgement
 The codes of this paper are based on the codes of DARTS (https://github.com/quark0/darts). We appreciate DARTS's codes and thank the authors of DARTS.
