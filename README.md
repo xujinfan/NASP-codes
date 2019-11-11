@@ -1,4 +1,4 @@
-# Differentiable Neural Architecture Search via Proximal Iterations
+# Efficient Neural Architecture Search via Proximal Iterations
 ## Requirements
 ```
 Python >= 3.5.5, PyTorch == 0.3.1, torchvision == 0.2.0
