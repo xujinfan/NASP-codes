@@ -163,6 +163,7 @@ def train(train_queue, valid_queue, model, architect, criterion, optimizer, lr):
     target_search = Variable(target_search, requires_grad=False).cuda(async=True)
     begin1 = time.time()
     architect.step(input, target, input_search, target_search, lr, optimizer)
+    model.clip()
     end1 = time.time()
     alphas_time += end1 - begin1
     optimizer.zero_grad()
@@ -180,7 +181,6 @@ def train(train_queue, valid_queue, model, architect, criterion, optimizer, lr):
     model.restore()
     nn.utils.clip_grad_norm(model.parameters(), args.grad_clip)
     optimizer.step()
-    model.clip()
     prec1, prec5 = utils.accuracy(logits, target, topk=(1, 5))
     objs.update(loss.data[0], n)
     top1.update(prec1.data[0], n)
